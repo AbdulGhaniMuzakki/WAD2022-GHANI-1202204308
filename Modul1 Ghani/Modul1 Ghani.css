@@ -17,6 +17,9 @@ body {
 ul {
   color: rgb(92, 191, 253);
 }
+.nav-link:hover {
+  color: rgb(10, 207, 10);
+}
 .card:hover {
   background: #fff;
   box-shadow: 12px 15px 20px 0px rgba(60, 75, 90, 0.25);
