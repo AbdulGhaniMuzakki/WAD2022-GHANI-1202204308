@@ -14,12 +14,12 @@
 <body>
 <?php
     $name = $_POST["nama"];
-    $book_date = $_POST["Tanggal_pesan"];
+    $book_date = $_P0ST["Tanggal_pesan"];
     $start_time = $_POST["Waktu_mulai"];
     $duration = $_POST["Durasi"];
     $car_type = $_POST["Jenis_Mobil"];
     $phone_number = $_POST["No_Telepon"];
-    $checkout = date("Y-m-d", strtotime("+$duration days", strtotime($book_date)));
+    $checkout = date("Y-m-d", strtotime("+$duration days", strtotime($duration)));
     $service = [];
     $service_cost = [];
     $service_subtotal = 0;
@@ -32,7 +32,7 @@
     array_push($service, $_POST["Service_2"]);
     array_push($service_cost, 100000);
     }
-    if (isset($_POST["Service_3"])) {
+    if (isset($_POST["service_3"])) {
     array_push($service, $_POST["Service_3"]);
     array_push($service_cost, 250000);
     }
