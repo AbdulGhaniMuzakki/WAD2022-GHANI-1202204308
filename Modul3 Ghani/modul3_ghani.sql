@@ -43,8 +43,8 @@ CREATE TABLE `showroom_ghani_table` (
 --
 
 INSERT INTO `showroom_ghani_table` (`id_mobil`, `nama_mobil`, `pemilik_mobil`, `merk_mobil`, `tanggal_beli`, `deskripsi`, `foto_mobil`, `status_pembayaran`) VALUES
-(0, 'Honda Civic', 'Ghani', 'Honda', '2022-12-12', 'Honda Civic 2022', 'civic.jpg', 'Lunas'),
-(0, 'Toyota Supra', 'Ghani', 'Toyota', '2022-12-12', 'Toyota Supra 2022', 'supra.png', 'Lunas'),
+(0, 'Honda Civic Type R', 'Ghani', 'Honda', '2022-12-12', 'Honda Civic Type R 2022', 'civic.jpg', 'Lunas'),
+(0, 'Toyota GR Supra', 'Ghani', 'Toyota', '2022-12-12', 'Toyota GR Supra 2022', 'supra.png', 'Lunas'),
 (0, 'Ford GT', 'Ghani', 'Ford', '2022-12-12', 'Ford GT 2022', 'ford gt.jpg', 'Belum Lunas');
 COMMIT;
 
