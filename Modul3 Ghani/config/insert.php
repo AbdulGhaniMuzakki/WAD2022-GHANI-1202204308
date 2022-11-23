@@ -4,7 +4,7 @@ require './connector.php';
 $namamobil = $_POST['nama'];
 $pemilik = $_POST['pemilik'];
 $merk = $_POST['merk'];
-$tanggalbeli = $_POST['tanggalbeli'];
+$tanggalbeli = $_POST['tanggal_beli'];
 $desc = $_POST['desc'];
 $status = $_POST['status'];
 

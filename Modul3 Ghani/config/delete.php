@@ -1,5 +1,4 @@
 <?php
-require './connector.php';
 
 $id = $_GET['id'];
 
