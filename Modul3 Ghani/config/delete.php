@@ -1,5 +1,5 @@
 <?php
-
+require './connector.php';
 $id = $_GET['id'];
 
 $sql = "DELETE FROM showroom_ghani_table WHERE id_mobil = $id";
