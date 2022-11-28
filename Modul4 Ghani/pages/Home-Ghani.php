@@ -35,7 +35,7 @@ function onClick($result)
           <h1>Selamat Datang Di<br /> Show Room Ghani </h1>
           <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Quo laboriosam labore, facere libero officia iure hic error cum?</p>
           <a href="<?php if (mysqli_num_rows($result) > 0) {
-                      echo "./pages/List-Ghani.php";
+                      echo "index.php?page=My_Car";
                     } else {
                       echo "./pages/Add-Ghani.php";
                     } ?>" class="button btn-primary">My Car</a>

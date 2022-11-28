@@ -18,7 +18,7 @@
         }
 
     ?>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="<?= isset($_GET['page']) && in_array($_GET['page'], ['register', 'login']) ? 'hide-nav' : '' ?>">
+    <nav class="navbar navbar-expand-lg navbar-dark <?= isset($_COOKIE['warna']) ? NavColour($_COOKIE['warna']) : '' ?>" id="<?= isset($_GET['page']) && in_array($_GET['page'], ['register', 'login']) ? 'hide-nav' : '' ?>">
         <div class="container px-5">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,9 +31,9 @@
                   $result = mysqli_query($connector, $sql);
 
                   if (mysqli_num_rows($result) > 0) {
-                     echo 'Ghani_index.php?page=My_Car';
+                     echo 'index.php?page=My_Car';
                   } else {
-                     echo 'Ghani_index.php?page=Add_Car';
+                     echo 'index.php?page=additem';
                   }
                   ?>">Mycar</a>
                 </div>
@@ -42,11 +42,11 @@
             <div class="navbar-home">
                 <div class="dropdown" id="<?= !isset($_COOKIE['nama']) ? 'hide' : '' ?>">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <? $_COOKIE['nama'] ?>
+                        <?= $_COOKIE['nama'] ?>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="index.php?page=profile">Profile</a></li>
-                        <li><a class="dropdown-item" href="index.php?page=logout">Logout</a></li> 
+                        <li><a class="dropdown-item" href="config/logout.php">Logout</a></li> 
                     </ul>
                 </div>
                 <div class="navcar">

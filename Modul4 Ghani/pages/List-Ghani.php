@@ -1,5 +1,5 @@
 <?php
-require '../config/connector.php';
+require 'config/connector.php';
 
 $query = "SELECT * FROM showroom_ghani_table";
 $result = mysqli_query($connector, $query);
@@ -39,13 +39,13 @@ if (isset($_GET['message'])) {
           if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
               echo "<div class='card cardcontent' style='width: 18rem;'>
-            <img src='../asset/images/" . $row["foto_mobil"] . "' class='card-img-top' alt='fotomobil' style='padding: 16px;'>
+            <img src='asset/images/" . $row["foto_mobil"] . "' class='card-img-top' alt='fotomobil' style='padding: 16px;'>
             <div class='card-body'>
               <h5 class='card-title'>" . $row["nama_mobil"] . "</h5>
               <p class='card-text'>" . substr($row["deskripsi"], 0, 50) . '...' . "</p>
               <span class='d-flex'>
-                <a href='Detail-Ghani.php?id=" . $row["id_mobil"] . "' class='btn btn-primary' style='border-radius: 100px; width:140px; height: 36px;'>Detail</a>
-                <a href='../config/delete.php?id=" . $row["id_mobil"] . "' class='btn btn-primary' style='border-radius: 100px; width:140px; height: 36px; margin-left:20px;'>Delete</a>
+                <a href='pages/Detail-Ghani.php?id=" . $row["id_mobil"] . "' class='btn btn-primary' style='border-radius: 100px; width:140px; height: 36px;'>Detail</a>
+                <a href='config/delete.php?id=" . $row["id_mobil"] . "' class='btn btn-primary' style='border-radius: 100px; width:140px; height: 36px; margin-left:20px;'>Delete</a>
               </span>
             </div>
           </div>";

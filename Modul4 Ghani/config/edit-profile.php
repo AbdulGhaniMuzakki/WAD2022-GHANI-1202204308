@@ -6,7 +6,7 @@ require 'connector-user.php';
     $pass_update = $_POST['pass'];
     $no_hp = $_POST['no_hp'];
     $pass_confirm = $_POST['fix_pass'];
-    $colour = $_POST['colour'];
+    $colour = $_POST['warna'];
 
     if(!empty($pass_update) && !empty ($pass_confirm)) {
         if ($pass_update == $pass_confirm) {
@@ -18,7 +18,7 @@ require 'connector-user.php';
                 setcookie('email', $email, time() + 3600, '/');
                 setcookie('password', $password, time() + 3600, '/');
                 setcookie('no_hp', $no_hp, time() + 3600, '/');
-                setcookie('colour', $colour, time() + 3600, '/');
+                setcookie('warna', $colour, time() + 3600, '/');
 
                 header("location: ../index.php");
             } else {
@@ -35,7 +35,7 @@ require 'connector-user.php';
             setcookie('nama', $nama, time() + 3600, '/');
             setcookie('email', $email, time() + 3600, '/');
             setcookie('no_hp', $no_hp, time() + 3600, '/');
-            setcookie('colour', $colour, time() + 3600, '/');
+            setcookie('warna', $colour, time() + 3600, '/');
 
             header("location: ../index.php");
         } else {

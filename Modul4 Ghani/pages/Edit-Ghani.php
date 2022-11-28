@@ -51,7 +51,7 @@ $result = mysqli_query($connector, $sql);
                       <input type='radio' name='status' id='belum' value='Belum Lunas' " . (($getDetail["status_pembayaran"] == 'Belum Lunas') ? 'checked="checked"' : "") . " style='width: 15px; height: 15px; margin-right:10px;'>
                       <label for='belum' style='margin-top: 15px;'>Belum Lunas</label>
                     </span>
-                    <button type='submit' class='btn btn-primary' style='margin-top: 40px;'>Selesai</button>
+                    <button type='submit' class='btn btn-primary' style='margin-top: 40px;' name='edit'>Selesai</button>
                   </form>
                 </div>
             ";

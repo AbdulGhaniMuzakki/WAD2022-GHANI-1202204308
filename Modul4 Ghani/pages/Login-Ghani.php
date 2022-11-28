@@ -42,7 +42,7 @@
                         <input type="submit" class="btn btn-primary booking-cta" value="Login">
                     </div>
                     <div class="notedS">
-                        <p>Already have an account? <a href="Ghani_index.php?page=register">Register</a></p>
+                        <p>Already have an account? <a href="index.php?page=register">Register</a></p>
                     </div>
             </form>
         </div>

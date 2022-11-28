@@ -26,6 +26,38 @@ body {
   color: #fff;
 }
 
+#hide{
+  display: none !important;
+}
+
+.logo {
+  width: 150px;
+}
+
+.profile-btn {
+  width: 150px !important;
+  margin-left: auto;
+}
+
+.rows-home {
+  align-items: center;
+  gap: 30px;
+  margin-top: 200px;
+}
+
+.dropdown-item,
+.dropdown-item:visited {
+  color: #000000;
+}
+
+.dropdown-item:hover {
+  color: #000000 !important;
+}
+
+.addcar-button {
+  margin-left: 20px;
+}
+
 .background {
   background-image: url("../asset/images/banner.png");
   background-size: cover;

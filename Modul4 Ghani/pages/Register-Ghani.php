@@ -50,7 +50,7 @@
                         <input type="submit" class="btn btn-primary booking-cta" value="Daftar">
                     </div>
                     <div class="notedS">
-                        <p>Already have an account? <a href="Ghani_index.php?page=login">Login</a></p>
+                        <p>Already have an account? <a href="index.php?page=login">Login</a></p>
                     </div>
             </form>
         </div>

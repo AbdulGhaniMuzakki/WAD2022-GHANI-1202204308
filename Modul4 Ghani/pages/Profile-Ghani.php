@@ -65,11 +65,11 @@
                             <option value="black" <?= isset($_COOKIE['warna']) && $_COOKIE['warna'] == 'black' ? 'selected' : '' ?>>Black</option>
                         </select>
               </div>
-            <button type="submit" class="btn btn-primary mt-5">Update</button>
+            <button type="submit" class="btn btn-primary mt-5 mb-5 profile-btn">Update</button>
             </div>
                         <div class="rows-home d-flex">
                             <div>
-                                <img src="asset/images/logo-ead.png" alt="logo ead">
+                                <img class="logo" src="asset/images/logo-ead.png" alt="logo ead">
                             </div>
                             <div class="nim">
                                 <p> Abdul Ghani Muzakki_1202204308</p> 
