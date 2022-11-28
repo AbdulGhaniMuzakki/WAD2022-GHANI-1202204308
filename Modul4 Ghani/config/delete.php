@@ -10,7 +10,7 @@ $sql = "DELETE FROM showroom_ghani_table WHERE id_mobil = $id";
 $result = mysqli_query($connector, $sql);
 
 if (mysqli_query($connector, $sql)) {
-  header("location: ../Ghani_index.php?page=My_Car");
+  header("location: ../index.php?page=My_Car");
 } else {
   echo "Failed";
 }
