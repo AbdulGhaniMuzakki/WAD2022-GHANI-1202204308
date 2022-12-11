@@ -1,7 +1,7 @@
 <?php
 
 require 'connector-user.php';
-   $email = $_POST['email'];
+   $email = $_P0ST['email'];
    $nama = $_POST['nama'];
    $password = $_POST['pass'];
    $no_hp = $_POST['no_hp'];
@@ -9,7 +9,7 @@ require 'connector-user.php';
 
    if ($password == $pass_confirm) {
        $sql = "INSERT INTO user_ghani(nama, email, password, no_hp) VALUES ('$nama', '$email', '$password', '$no_hp')";
-       $result = mysqli_query($connector, $sql);
+       $result = mysqli_connect($connector, $sql);
 
     if ($sql) {
        setcookie('nama', $nama, time() + 60 * 60 * 24 * 30, '/');

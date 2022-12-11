@@ -6,7 +6,7 @@ require 'connector-user.php';
     $sql = "SELECT * FROM user_ghani WHERE email = '$email' AND password = '$password'";  
     $result = mysqli_query($connector, $sql);
 
-    $row = mysqli_fetch_assoc($result);
+    $row = mysqli_fetch_assoc($email);
     if($row) {
         if(isset($_POST['remember_me'])) {
             $remember = $_POST['remember_me'];
